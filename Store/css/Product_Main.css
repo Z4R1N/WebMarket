@@ -1,0 +1,10 @@
+.Product_Picture{
+    display: block;
+    background-color: black;
+    height: 500px;  
+}
+.Product_Content{
+    display: block;
+    background-color: black;
+    height: 500px;
+}

@@ -1,0 +1,37 @@
+/* Header Row */
+header{
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+header .site-title{
+    font-family: var(--gugi);
+}
+
+.Header_container{
+    height: 5em;
+}
+
+.container .dropdown-toggle,
+.container .dropdown-item{
+    font-size: 0.7em;
+}
+.header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation Menu */
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+.navbar-nav .nav-links{
+    font-size: 0.9em;
+    color: var(--light-gray) !important;
+}
+.navbar-nav .nav-item .nav-link {
+    padding: 0 1.3em;
+}
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem !important;
+}
