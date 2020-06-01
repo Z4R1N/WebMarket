@@ -1,0 +1,45 @@
+main{
+    justify-content: center;
+    display: flex;
+}
+.Main-Container{
+    justify-content: center;
+    display: flex;
+}
+.OriginalCard{
+    background-color: #4c4c4c;
+    width: 250px;
+    height: 400px;
+
+    margin: 5px;
+
+    border-style: double;
+    border-width: 5px;
+
+    position: relative;
+}
+.VisibleCard{
+    display: block !important;
+}
+
+.OriginalCardPicture{
+    width: 225px;
+    padding: 10px;
+    height: auto;
+}
+.OriginalCard:hover{
+    background: #b4b4b4;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.OriginalCardName{
+    color: rgb(211, 211, 211);
+    text-align: center;
+}
+.OriginalCardContent{
+    position: absolute;
+    bottom: 0;
+
+    font-family: var(--gugi);
+}

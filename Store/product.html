@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arab Professional</title>
+    <title>Product: Arab Professional</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" 
@@ -20,98 +20,110 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/HeaderSection.css">
-    <link rel="stylesheet" href="./css/SliderSection.css">
+    <link rel="stylesheet" href="./css/Product_Main.css">
 </head>
 
 
 
 <body>
 <!-- Header -->
-    <header>
+<header>
 
-        <div class="Header_container container"> <!-- Header Row -->
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-12">
-                    <div class="btn-group">
-                        <button
-                        class="btn border dropdown-toggle my-md-4 my-2 text-white"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false">
-                        USD
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">ERU - Euro</a>
-                            <a href="#" class="dropdown-item">SEK - Krona</a>
-                        </div>
+    <div class="container"> <!-- Header Row -->
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-12">
+                <div class="btn-group">
+                    <button
+                    class="btn border dropdown-toggle my-md-4 my-2 text-white"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                    USD
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">ERU - Euro</a>
+                        <a href="#" class="dropdown-item">SEK - Krona</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 text-center">
-                    <h2 class="my-md-3 site-title text-white">Arab Professional</h2>
-                </div>
-                <div class="col-md-4 col-12 text-right">
-                    <p class="my-md-4 header-links">
-                        <a href="./login.html" class="px-2">Sign In</a>
-                        <a href="#" class="px-1">Create an Account</a>
-                    </p>
-                </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <h2 class="my-md-3 site-title text-white">Arab Professional</h2>
+            </div>
+            <div class="col-md-4 col-12 text-right" id="signing_in">
+                <p class="my-md-4 header-links">
+                    <a href="./login.html#si" class="px-2">Sign In</a>
+                    <a href="./login.html#ca" class="px-1">Create an Account</a>
+                </p>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid p-0"> <!-- Navigation Menu -->
+    <div class="container-fluid p-0"> <!-- Navigation Menu -->
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">COLLECTION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SHOP</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-                    </li>
-                  </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#TODO">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#TODO">SHOP</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./about.html">ABOUT US</a>
+                </li>
+              </ul>
+            </div>
 
-                <div class="navbar-nav">
-                    <li class="nav-item border rounded-circle mx-2 search-icon">
-                        <i class="fas fa-search p-2"></i>
-                    </li>
-                    <li class="nav-item border rounded-circle mx-2 basket-icon">
-                        <i class="fas fa-shopping-basket p-2"></i>
-                    </li>
-                </div>
+            <div class="navbar-nav">
+                <li class="nav-item border rounded-circle mx-2 search-icon">
+                    <i class="fas fa-search p-2"></i>
+                </li>
+                <li class="nav-item border rounded-circle mx-2 basket-icon">
+                    <i class="fas fa-shopping-basket p-2"></i>
+                </li>
+            </div>
 
-              </nav>
-        </div>
+          </nav>
+    </div>
 
-    </header>
+</header>
 <!-- Main -->
     <main>
-        <div class="container"> <!-- Main -->
-            <div class="col-2">
-                <div class="Product_Picture">
-                    <img src="./assets/Banner-Page-2.png" alt="Banner 3"/>
+        <div class="row Product_Contents"> <!-- Main -->
+
+            <div class="col-4 Product_Picture">
+                <img id="ProductPicture" src="./assets/Products/Item_1.png" alt="Banner 3"/>
+            </div>
+
+            <div class="col-6 Product_Content">
+                <h1 id="ProductName" class="Product_Name">Product name</h1>
+                <div class="Line"></div>
+
+                <div class="row">
+                    <p class="DefaultSetting col-3">Price:</p>
+                    <p id="ProductPrice" class="Product_Price col-4">10kr</p>
+                    
+                    <p class="Product_Price col-4"><input onclick="AddItem()" type="button" value="Buy"></p>
                 </div>
-              </div>
-          
-              <div class="col-8 Ncol">
-                <div class="Product_Content">
-                    <img src="./assets/Banner-Page-2.png" alt="Banner 3"/>
+
+                <div class="row">
+                    <p class="DefaultSetting col-3">Discreption:</p>
+                    <p id="ProductDiscreption" class="Product_Discreption col-9">Product discreption</p>
                 </div>
-              </div>
+
+            </div>
+
         </div>
     </main>
 <!-- Footer -->
@@ -132,6 +144,6 @@
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
 
-    <script src="./js/main.js"></script>
+    <script src="./js/LocalStorageItems.js"></script>
 </body>
 </html>

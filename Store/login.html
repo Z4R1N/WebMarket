@@ -19,8 +19,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login-style.css">
     <link rel="stylesheet" href="./css/HeaderSection.css">
+    <link rel="stylesheet" href="./css/login-style.css">
 </head>
 
 
@@ -47,22 +47,22 @@
                 <input onclick="toggle_visibility('login-container');" type="submit" value="Log in">
                 <input onclick="toggle_visibility('register-container');" type="submit" value="Register">
             </h2>
-            
-            <h2 class="login-header">Log in</h2>
           
             <form id="login-container" class="login-container" style="display: block;">
                 <p><input id="login_email" type="email" placeholder="Email"></p>
                 <p><input id="login_password" type="password" placeholder="Password"></p>
-                <p><input onclick="login()" type="submit" value="Log in"></p>
+                
+                <p><input onclick="login()" type="button" value="Log in"></p>
             </form>
             
 
             <form id="register-container" class="login-container" style="display: none;">
                 <p><input id="register_username" type="username" placeholder="Username"></p>
                 <p><input id="register_email" type="email" placeholder="Email"></p>
-                <p><input id="register_password1" type="password" placeholder="Password"></p>
+                <p><input id="register_password1" type="password" placeholder="Password" pattern=".{8,12}" required title="Your password have to be 8 to 12 characters."></p>
                 <p><input id="register_password2" type="password" placeholder="Confirm Password"></p>
-                <p><input onclick="register()" type="submit" value="Register Account"></p>
+
+                <p><input onclick="register()" type="button" value="Register Account"></p>
             </form>
         </div>
     </main>
@@ -84,6 +84,7 @@
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
 
+    <script src="./js/LocalStorageItems.js"></script>
     <script src="./js/login-main.js"></script>
 </body>
 </html>

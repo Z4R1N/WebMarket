@@ -9,15 +9,6 @@ var Accounts = [
     },
 
     {
-        Username: "Green",
-
-        Email: "Green@gmail.com",
-        Password: "GreenPass",
-
-        Rank: "Invester",
-    },
-
-    {
         Username: "Blue",
 
         Email: "Blue@gmail.com",
@@ -26,6 +17,7 @@ var Accounts = [
         Rank: "Admin",
     },
 ]
+var Logged_In_bool = false;
 
 function toggle_visibility(id) {
     var Current_container = document.getElementById(id);
@@ -43,21 +35,24 @@ function login(){
     var Login_Email_box = document.getElementById("login_email").value;
     var Login_Password_box = document.getElementById("login_password").value;
 
+    Logged_In_bool = false;
+
     for(i = 0; i < Accounts.length; i++){
         if(Login_Email_box == Accounts[i].Email && Login_Password_box == Accounts[i].Password){
             alert(Accounts[i].Username + " is now online!")
 
             if(Accounts[i].Rank == "Admin"){
-                window.location.href = "./admin.html";
+                localStorage.setItem("Online", "Admin");
+                window.location.href = "admin.html";
                 return
             }
-            window.location.href = "./index.html";
-            return
+
+            localStorage.setItem("Online", "true");
+            window.location.href = "index.html?/online";
         }
     }
     console.log("Incorrect email or password!");
 }
-
 
 function register(){
     var Register_Username_box = document.getElementById("register_username").value;
@@ -80,21 +75,7 @@ function register(){
 
     if(check == Accounts.length)
     {
-        Accounts.push({ Username: Register_Username_box, Email: Register_Email_box, Password: Register_Password_box1, Rank: "User",});
-
-        /*test 
-        Accounts.push(
-            {
-                Username: document.getElementById("register_username").value,
-                
-                Email: document.getElementById("register_email").value,
-                Password: document.getElementById("register_password1").value,
-                
-                Rank: "User",
-            }
-        );
-        */
-
+        Accounts.push({ Username: Register_Username_box, Email: Register_Email_box, Password: Register_Password_box1, Rank: "User"});
         alert("An account has been created!")
     }
 }

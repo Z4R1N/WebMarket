@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arab Professional</title>
+    <title>Collection: Arab Professional</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" 
@@ -20,7 +20,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/HeaderSection.css">
-    <link rel="stylesheet" href="./css/SliderSection.css">
+    <link rel="stylesheet" href="./css/collection-style.css">
 </head>
 
 
@@ -100,30 +100,21 @@
 </header>
 <!-- Main -->
     <main>
-        <div class="container-fluid p-0">
-            <div class="site-slider">
-                <div class="slider-one">
-                    <div>
-                        <div class="makecentered">
-                            <img src="./assets/Banner-New_Outfits.png" class="img-fluid width-auto" alt="Banner 1"/>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="makecentered">
-                            <img src="./assets/Banner-New_Emotes.png" class="img-fluid width-auto" alt="Banner 2"/>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="makecentered">
-                            <img src="./assets/Banner-New_Skins.png" class="img-fluid width-auto" alt="Banner 3"/>
-                        </div>
-                    </div>
+        <div class="row Main-Container col-9"> <!-- Main -->
+
+            <div id="OriginalCard" class="OriginalCard" style="display: none;" onclick="ProdctClicked(this.id);">
+                <div class="OriginalCardPicture">
+                    <img id="OriginalCardPicture" class="OriginalCardPicture" src="./assets/Products/Item_1.png" alt="">
                 </div>
-                <div class="slider-btn">
-                    <span class="prev position-top left-0"><i class="fas fa-chevron-left"></i></span>
-                    <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+                
+                <div class="col-12 OriginalCardContent">
+                    <div class="Line"></div>
+                    <h2 id="OriginalCardName" class="OriginalCardName">Name</h2>
                 </div>
+
+                <p id="OriginalCardDiscreption" class="OriginalCardDiscreption" style="display: none;">Name</p>
             </div>
+
         </div>
     </main>
 <!-- Footer -->
@@ -144,7 +135,6 @@
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
 
-    <script src="./js/main.js"></script>
     <script src="./js/LocalStorageItems.js"></script>
 </body>
 </html>

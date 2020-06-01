@@ -5,6 +5,7 @@ header{
 }
 header .site-title{
     font-family: var(--gugi);
+    text-shadow: 0px 0px 10px white;
 }
 
 .Header_container{
